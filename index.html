@@ -1,43 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PixelPerfectCharlie</title>
-</head>
-<body>
-    <header class="header">
-        <h1>Charlie Tung's Portfolio</h1>
-        <p>Frontend Developer</p>
-    </header>
-    
-    <nav class="navigation-container">
-        <!-- You can add navigation links here if needed -->
-    </nav>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>One Page Portfolio</title>
 
-    <main class="main-container">
-        <section class="introduction-section">
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself here.</p>
-        </section>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
 
-        <section class="project-section">
-            <h2>Projects</h2>
-            <article>
-                <h3>Project 1: Project Name</h3>
-                <p>Description of Project 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </article>
-        </section>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
 
-        <section class="contact-me">
-            <h2>Contact</h2>
-            <p>You can reach me at charlie@example.com</p>
-        </section>
-    </main>
 
-    <footer class="footer">
-        <p>&copy; 2023 Charlie Tung</p>
-    </footer>
-</body>
-</html>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <header class="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <div class="cross">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <ul class="main-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Portfolio</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+              <div class="hero-text">
+                <h1><span>Hi, I am</span><br>Charlie Tung.</h1>
+                <h3 id="typewriter">Web Developer</h3>
+                <!-- <a href="#" class="btn btn-lg btn-primary">Know More</a> -->
+                <!-- <ul class="social-links">
+                  <li class="label">Join me here</li>
+                  <li><a href="#"><img src="assets/behance.png"></a></li>
+                  <li><a href="#"><img src="assets/dribbble.png"></a></li>
+                  <li><a href="#"><img src="assets/twitter.png"></a></li>
+                  <li><a href="#"><img src="assets/github.png"></a></li>
+                </ul> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="case-study">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="sub-heading">Experience</h4>
+              <h1 class="heading purple"><span class="purple">Worked</span> with <br>Startups and founders</h1>
+              <!-- Swiper -->
+              <div class="swiper-container client-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide client-box">
+                    <img src="assets/Continual.png" class="client-logo">
+                    <h3 class="text-left title">Build an AI copilot for your application</h3>
+                    <p class="text-left tag">UX/UI, Website, Dashboard</p>
+                    <p class="text-left"><a href="https://continual.ai/">Know More &#8594;</a></p>
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <img src="assets/allpass.png" class="client-logo">
+                    <h3 class="text-left title">Health screening to protect your business</h3>
+                    <p class="text-left tag">Dashboard, UX/UI, Website</p>
+                    <p class="text-left"><a href="https://allpass.io/">Know More &#8594;</a></p>
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <img src="assets/prospectfarms.png" class="client-logo">
+                    <h3 class="text-left title">Fueling leading wellness brands with all natural ingredients</h3>
+                    <p class="text-left tag">UX/UI, Website</p>
+                    <p class="text-left"><a href="https://home.prospectfarms.com/">Know More &#8594;</a></p>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Banner -->
+      <section class="contact-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Let’s talk about your product</h1>
+              <a href="mailto:choelestung@gmail.com" class="btn btn-lg btn-primary">Get in touch now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row footer">
+            <div class="col-md-12 text-center">
+              <h1>Charlie<br><span>Tung</span></h1>
+              <ul class="social-links">
+                <!-- <li><a href="#"><img src="assets/behance.png"></a></li> -->
+                <!-- <li><a href="#"><img src="assets/dribbble.png"></a></li> -->
+                <!-- <li><a href="#"><img src="assets/twitter.png"></a></li> -->
+                <!-- <li><a href="#"><img src="assets/github.png"></a></li> -->
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+      </footer>
+
+      <!-- Some Javascript -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/swiper.jquery.min.js"></script>
+      <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+      <script type="text/javascript">
+        console.log("typewriter")
+        const typewriter = new Typewriter('#typewriter', {
+          strings: ["Web Developer", "Problem Solver", "Innovator"],
+          autoStart: true,
+          loop: true
+        });
+
+      </script>
+      <!-- Initialize Client Swiper -->
+      <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        loop: true,
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script>
+      // Counterup
+      $('.counter').counterUp({
+        time: 1000
+      });
+
+      // Main Navigation
+      $('#menu-toggle').click(function(){
+        $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+      })
+      </script>
+    </body>
+    </html>
