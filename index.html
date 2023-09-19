@@ -185,7 +185,6 @@
 	<script src="js/swiper.jquery.min.js"></script>
 	<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 	<script type="text/javascript">
-		console.log("typewriter")
 		const typewriter = new Typewriter('#typewriter', {
 			strings: ["Web Developer", "Problem Solver", "Innovator"],
 			autoStart: true,
@@ -195,6 +194,19 @@
 	</script>
 	<!-- Initialize Client Swiper -->
 	<script>
+		var testimonialBox = document.querySelectorAll(".testimonial-box")
+		var links = [
+			"https://robincould.netlify.app/",
+			"https://flatiron-life.netlify.app/"
+		]
+
+		testimonialBox.forEach((box, i) => {
+			box.addEventListener("click", function (e) {
+				e.preventDefault()
+				window.open(`${links[i]}`, "_blank").focus()
+			})
+		})
+
 		var swiper1 = new Swiper('.client-swiper', {
 			loop: true,
 			slidesPerView: 3,
@@ -226,7 +238,7 @@
 		var swiper2 = new Swiper('.testimonial-swiper', {
 			slidesPerView: 2,
 			// pagination: '.swiper-pagination',
-			// paginationClickable: true,
+			paginationClickable: true,
 			spaceBetween: 30,
 			grabCursor: true,
 			freeMode: true,
